@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src = "script.js" > </script>
+    </head>
+    <body>
+        
+        <nav>
+            <button class = "btnplace" type = "button" onclick = "location.href='index.html'"> My places </button>
+            <button class = "btnform" type = "button" onclick = "location.href='form.html'"> Form Input </button>
+        </nav>
+        
+        <form method = "get" action = "http://www-users.cselabs.umn.edu/~tulaj001/form_handler.php">
+            
+            <table class = "form">
+            
+                <tr>
+                    <td id = "lbl1" > Place Name </td>
+                    <td id = "ipt1" > <input id = "pname" name = "placename" type = "text" placeholder = "Name of the place" required> </td>
+                
+                </tr>
+
+                <tr>
+                    <td id = "lbl2" > Address Line1 </td>
+                    <td id = "ipt2" > <input id = "ad1" name = "addressline1" type = "text" placeholder = "Apt#, Street Address" required> </td>
+                
+                </tr>
+
+                <tr>
+                    <td id = "lbl3" > Address Line2 </td> 
+                    <td id = "ipt3" > <input id = "ad2" name = "addressline2" type = "text" placeholder = "City, zip code" required> </td>
+                
+                </tr>
+
+                <tr>
+                    <td id = "lbl4" > Open Time </td>
+                    <td id = "ipt4" > <input name = "opentime"  id = "Tm1" type = "time"  required> </td>
+                
+                </tr>
+
+                <tr>
+                    <td id = "lbl5" > Close Time </td>
+                    <td id = "ipt5" > <input name = "closetime"  id = "Tm2" type = "time"  required> </td>
+                
+                </tr>
+
+                <tr>
+                    <td id = "lbl6" > Additional Info Text</td>
+                    <td  id = "ipt6" > <input name = "additionalinfo" type = "text" placeholder = "Link to additional information"> </td>
+                
+                </tr>
+                
+                <tr>
+                    <td id = "lbl7" > Additional Info URL </td>
+                    <td  id = "ipt7" > <input name = "additionalinfourl" type = "url" placeholder = "Link to additional information"> </td>
+                
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td id = "ipt8" > <input id = "sub" type = "submit" value = "Submit" onclick = "return validate()" > </td>
+                </tr>
+                
+                
+
+            
+            </table>
+            
+        </form>
+        <p id="demo"></p>
+        
+    </body>
+</html>

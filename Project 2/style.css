@@ -1,0 +1,76 @@
+
+/* 
+    Created on : Jan 28, 2018, 5:59:19 AM
+    Author     : therence
+*/
+
+body{
+    background-color: #EADEF0;
+}
+
+table{
+    margin-top: 30px;
+}
+
+form{
+    background-color: #99E7FA;
+    width: 40%;
+    margin: auto;
+}
+table.index td{
+    border:  solid white;
+    background-color: #99E7FA;
+}
+
+table.index {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+h1, table.index td, a, footer{
+    text-align: center;
+}
+
+nav{
+    width:100%;
+    text-align: center;
+    background-color: yellow;
+}
+
+.btnplace{
+    margin-right: 50px;
+}
+.btnform{
+    margin-left: 50px;
+}
+
+table.form td#lbl4, table.form td#lbl5{
+    background-color: white;
+}
+
+input{
+    text-align: center;
+}
+input#Tm1, input#Tm2{
+   width: 50%;
+}
+table.form td#ipt1, table.form td#ipt2, table.form td#ipt3, table.form td#ipt4, table.form td#ipt5, table.form td#ipt6, table.form td#ipt7{
+    padding-left: 100px;
+}
+
+.twitter{
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+

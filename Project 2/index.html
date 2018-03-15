@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8"/>
+	<title> Abiola's Favs </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src = "script.js" > </script>
+</head>
+
+
+
+<body>
+    <nav>
+        <button class = "btnplace" type = "button" onclick = "location.href='index.html'"> My places </button>
+        <button class = "btnform" type = "button" onclick = "location.href='form.html'"> Form Input </button>
+    </nav>
+
+    <table class = "index" > 
+        
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Address </th>
+                <th> <p> Hours of Operation <br/> Open/ Close </p> </th>
+                <th> <p> Additional <br/> information <p> </th>
+            </tr>
+           
+        </thead>
+        
+        <tbody>
+
+            <tr> 
+                <td id = "home" onclick = name(home)> Home </td>
+                <td> <p> 3515 Century Avenue <br> St Paul, MN 55110 <p> </td>
+                <td> <p> 12:00 am <br> 11:59 pm <p> </td>
+                <td> <a href = http://centurycommons.net> Info </a>
+            </tr>
+
+            <tr> 
+                <td id = "keller" onclick = name(keller)> Keller Hall </td>
+                <td> <p> 200 Union Street Se <br> Minneapolis, MN, 55455 <p> </td>
+                <td> <p> 7:00 am <br> 6:59 pm <p> </td>
+                <td> <a href = http://campusmaps.umn.edu/kenneth-h-keller-hall> Info </a>
+            </tr>
+
+            <tr> 
+                <td id = "chipotle" onclick = name(chipotle)> Chipotle </td>
+                <td> <p> 800 Washington Ave SE <br> Minneapolis, MN, 55414 <p> </td>
+                <td> <p> 10:00 am <br> 10:00 pm <p> </td>
+                <td> <a href = https://www.chipotle.com> Info </a>
+            </tr>
+
+            <tr> 
+                <td id = "northrop" onclick = name(northrop)> Northrop Auditorium </td>
+                <td> <p> 84 Church St SE <br> Minneapolis, MN 55455 <p> </td>
+                <td> <p> 7:00 am <br> 11:00 pm <p> </td>
+                <td> <a href = http://www.northrop.umn.edu> Info </a>
+            </tr>
+            
+
+        </tbody>
+        
+        
+    </table>
+    
+    <div class = "twitter">
+        <a class="twitter-timeline" data-width="300" data-height="550" data-theme="dark" href="https://twitter.com/UMNews?ref_src=twsrc%5Etfw">Tweets by UMNews</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    
+    <div id = "img">
+        <p></p>
+        <p>
+            <img id = "myImg" src = "gophers-mascot.png" alt="Gopher" >
+        </p>
+    </div>
+    
+
+    <footer>
+        
+        <p> <strong> Note: </strong> Works both in Chrome and FireFox </p> 
+ 
+    </footer>
+	
+</body>
+
+</html>
