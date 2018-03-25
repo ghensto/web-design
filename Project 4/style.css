@@ -1,0 +1,161 @@
+
+/* 
+    Created on : Jan 28, 2018, 5:59:19 AM
+    Author     : therence
+*/
+
+body{
+    background-color: #3A4C4F;
+	/*display: inline-block;
+    margin: 0px auto;
+    text-align: center;*/
+}
+
+table {
+    margin-top: 30px;
+}
+
+form{
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+}
+table.index td, table.index th, form td{
+    border: 2px solid white;
+    background-color: #ADCFD2;
+}
+form td, font tr{
+    background-color: #ADCFD2;
+    text-align: center;
+    width: fit-content;
+    border-collapse: separate;
+    padding-bottom: 20px;
+}
+#head, #foot{
+    background-color: white;
+}
+
+table.index td, table.index th{
+    border-collapse: collapse
+}
+
+
+table.index {
+    background-color: white;
+    width: 50%;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+h1, table.index td, a, footer{
+    text-align: center;
+}
+
+nav{
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    background: #19A0FF;
+    background: linear-gradient(-225deg, #19A0FF 70%, lightskyblue 30%);
+}
+
+.btnplace, .btnform{
+    background: #19A0FF;
+    height: fit-content;
+    border: none;
+    font-size: 24px;
+    color: white;
+    
+}
+.btnplace:active, .btnform:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input{
+    text-align: center;
+}
+
+
+input#Tm1, input#Tm2{
+   width: 100%;
+}
+table.form td#ipt1, table.form td#ipt2, table.form td#ipt3, table.form td#ipt4, table.form td#ipt5, table.form td#ipt6, table.form td#ipt7{
+    padding-left: 100px;
+}
+
+.twitter{
+    position: absolute;
+    margin-top: 90px;
+    right: 150px;
+    top: 0;
+    display: block;
+}
+
+#map{
+    display: block;
+    margin: 0px;
+    height: 500px;
+    width: 700px;
+    position: fixed;
+}
+
+#gpsmenu{
+    margin: 0px;
+    text-align: left;
+    position: relative;
+}
+
+#gpsmenu th{
+    text-align: left;
+}
+
+#search, #get, #sub{
+    background-color: #4CAF50;
+    border-radius: 6px;
+    color: white;
+    margin: 4px 2px;
+    padding: 10px 28px;
+}
+
+#right-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 40px;
+}
+
+#right-panel select, #right-panel input {
+    font-size: 12px;
+}
+
+#right-panel select {
+    width: 100%;
+}
+
+#right-panel i {
+    font-size: 12px;
+	
+}
+
+#right-panel {
+    float: right;
+    width: 30%;
+    margin-top: -510px;
+}
+.panel {
+    height: 500px;
+    overflow: auto;
+}
+
+#right-panel td{
+	background-color: #ADCFD2;
+	border: 2px solid white;
+}
+
+table.index, #gpsmenu, #map {
+	margin-left: 200px;
+}
+

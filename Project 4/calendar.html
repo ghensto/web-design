@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <title> Abiola's Favs </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9hlbkTKWWomH_HJhyMqP9hCMHmV_khbg&sensor=false&libraries=places" >
+        </script>
+        <script src = "script.js" ></script>
+    </head>
+
+
+
+    <body onload = initMap()>
+        <nav>
+            <button class = "btnplace" type = "button" onclick = "location.href = 'calendar.html'"> Favorite Places </button>
+            <button class = "btnform" type = "button" onclick = "location.href = 'form.html'"> Form Input </button>
+        </nav>
+		
+        <table class = "index" > 
+
+
+            <tr>
+                <th> Name </th>
+                <th> Address </th>
+                <th> <p> Hours of Operation <br/> Open/ Close </p> </th>
+                <th> <p> Additional <br/> information <p> </th>
+            </tr>
+
+
+
+            <tr> 
+                <td class = "pName" id = "home" > Home </td>
+                <td class = "address"> <p> 833 East River Parkway <br> Minneapolis, MN 55414 <p> </td>
+                <td> <p> 12:00 am <br> 11:59 pm <p> </td>
+                <td> <a href = http://centurycommons.net> Info </a>
+            </tr>
+
+            <tr> 
+                <td class = "pName" id = "keller" > Keller Hall </td>
+                <td class = "address" > <p> 200 Union Street Se <br> Minneapolis, MN, 55455 <p> </td>
+                <td> <p> 7:00 am <br> 6:59 pm <p> </td>
+                <td> <a href = http://campusmaps.umn.edu/kenneth-h-keller-hall> Info </a>
+            </tr>
+
+            <tr> 
+                <td class = "pName" id = "chipotle" > Chipotle </td>
+                <td class = "address"> <p> 800 Washington Ave SE <br> Minneapolis, MN, 55414 <p> </td>
+                <td> <p> 10:00 am <br> 10:00 pm <p> </td>
+                <td> <a href = https://www.chipotle.com> Info </a>
+            </tr>
+
+            <tr> 
+                <td class = "pName" id = "northrop" > Northrop Auditorium </td>
+                <td class = "address"> <p> 84 Church St SE <br> Minneapolis, MN 55455 <p> </td>
+                <td> <p> 7:00 am <br> 11:00 pm <p> </td>
+                <td id="lnk" > <a href = http://www.northrop.umn.edu> Info </a>
+            </tr>
+
+
+
+
+
+        </table>
+
+        <div class = "twitter">
+            <a class="twitter-timeline" data-width="300" data-height="400" data-theme="dark" href="https://twitter.com/UMNews?ref_src=twsrc%5Etfw">Tweets by UMNews</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+
+        <table id = "gpsmenu">
+            <tr>
+                <th> Radius: <input id = "rads" type="text" name="Radius"> </th> 
+                <th> Nearby: 
+                    <select id="nearby">
+                        <option value="restaurant"> Restaurants </option>
+                        <option value="hospital"> Hospitals </option>
+                        <option value="museum"> Museum </option>
+                        <option value="supermarket"> Supermarket </option>
+                    </select>
+                </th>
+                <th> <button onclick = "search()" id ="search" type = "button" > Search Near Me </button> </th>
+
+            </tr>
+
+            <tr>
+                <th> Destination: <input id ="destin" type="text" name="Destination"> </th> 
+                <th> Mode of Travel: 
+                    <select id="dest">
+                        <option value="DRIVING"> Driving </option>
+                        <option value="WALKING"> Walking </option>
+                        <option value="BICYCLING"> Bicycling </option>
+                        <option value="TRANSIT"> Transit </option>
+                    </select>
+                </th>
+                <th> <button id ="get" type = "button" onclick = directions()> Get Directions </button> </th>
+            </tr>
+
+        </table>
+        
+        
+
+        <div id = "map"></div>
+        <div class = "panel" id="right-panel">
+        </div>
+
+        <footer>
+
+            <p> <strong> Note: </strong> Works both in Chrome and FireFox </p> 
+
+        </footer>
+
+    </body>
+
+</html>
